@@ -9,7 +9,7 @@ def index() :
 
 @app.route('/test/<int:num>')
 def test(num) : 
-    return num # 여기 왜안되냐
+    return str(num)
 
 if __name__ == '__main__' : 
     app.run(host = '0.0.0.0', port = '80')
